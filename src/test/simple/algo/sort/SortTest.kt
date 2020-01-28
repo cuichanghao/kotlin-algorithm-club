@@ -37,7 +37,7 @@ class SortTest {
 
     @Test
     fun quickSortTest() {
-        val count = QuickSort().sort(testData, 0, testData.size - 1)
-        println("Big O performance: $count")
+        val performance = QuickSort().sort(testData, 0, testData.size - 1)
+        println("Big O performance: $performance")
     }
 }

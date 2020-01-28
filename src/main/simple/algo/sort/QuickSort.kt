@@ -1,12 +1,12 @@
 package simple.algo.sort
 
 class QuickSort {
-    var performanceCount = 0
+    var bigOPerformance = BigOPerformance()
 
-    fun sort(list: Array<Int>, low: Int, high: Int): Int {
+    fun sort(list: Array<Int>, low: Int, high: Int): BigOPerformance {
 
         if(low >= high) {
-            return performanceCount
+            return bigOPerformance
         }
 
         val middle = low + (high - low) / 2
@@ -17,14 +17,15 @@ class QuickSort {
 
         while(i <= j) {
             while(list[i] < pivot) {
-                performanceCount++
+                bigOPerformance.loopCount++
                 i++
             }
             while (list[j] > pivot) {
-                performanceCount++
+                bigOPerformance.loopCount++
                 j--
             }
             if(i <= j) {
+                bigOPerformance.swapCount++
                 list.swap(i,j)
                 i++
                 j--
@@ -38,6 +39,6 @@ class QuickSort {
             sort(list, i, high)
         }
 
-        return performanceCount
+        return bigOPerformance
     }
 }
