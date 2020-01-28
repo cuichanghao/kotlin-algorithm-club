@@ -23,11 +23,11 @@
 package io.uuddlrlrba.ktalgs.sorts
 
 /**
- * Shellsort, also known as Shell sort or Shell's method, is an in-place comparison sort. It can be seen as either a
- * generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). The method starts by
+ * Shellsort, also known as Shell simple.algo.sort or Shell's method, is an in-place comparison simple.algo.sort. It can be seen as either a
+ * generalization of sorting by exchange (bubble simple.algo.sort) or sorting by insertion (insertion simple.algo.sort). The method starts by
  * sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be
  * compared. Starting with far apart elements, it can move some out-of-place elements into position faster than
- * a simple nearest neighbor exchange. Donald Shell published the first version of this sort in 1959.
+ * a simple nearest neighbor exchange. Donald Shell published the first version of this simple.algo.sort in 1959.
  * This implementation uses the gap sequence proposed by Pratt in 1971: 1, 4, 13, 40...
  */
 @ComparisonSort
