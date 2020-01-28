@@ -1,3 +1,7 @@
+- simplify example
+- add BigOPerformance to look Big O loop count and swap count.
+
+
 ![alt text](kotlin-algorithm-club.png "Logo Title Text 1")
 
 [![Kotlin](https://img.shields.io/badge/kotlin-1.2.41-blue.svg)](http://kotlinlang.org)
